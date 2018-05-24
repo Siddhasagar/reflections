@@ -1,0 +1,37 @@
+Q. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+We used diff command with -u so as to get the output in unified format.
+Then it showed the differences between the both text files with + signifying new changes and - signifying
+old deleted/modified things which we can easily compare.
+
+Q. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+We can know the various levels of changes we made throughout the project and if it fails at some point we can go 
+back to any running version anytime without losing work.
+
+Q. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros- only logical changes are saved whenever needed and not too short or long commits that do not use git efficiently. With too many commits for every change can make it hard for to read the history since it will have a large number of commits. And also you should not make large changes in a single commit which may result in too many defferences when using the diff command.
+
+Q. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+While working in a project we often have to deal with multiple files and we have to track them together
+Git calls such a collection of files as Repository.
+ex. include during creation of webpages we have to deal with html and css files together and we want to check the progress in each one simultaneously. While saving a version of files in git we will have a version of every file in the repository.
+Git will track the state of each file each time we commit. A commit is a snapshot of every file in your repositoryat the tiem you choose to commit. 
+
+Q. How can you use the commands git log and git diff to view the history of files?
+
+To view the git log use $git log or $git log --stat
+To get he difference between the commits $git diff commit_id_1 commit_id_2
+Do have look on +(red) for additions to file and -(green) for deletion from file
+
+Q. How might using version control make you more confident to make changes that could break something?
+
+Well we can revert back to an earlier working version through the commit id. The commit we want to run we do by typing 
+$git checkout commit_id and see if it running correctly or not
+Then we can compare the running version and the bugged version using the git diff commit_id1 commit_id2 command
+
+Q. Now that you have your workspace set up, what do you want to try using Git for?
+
+Do some coding tasks, soem personal projects and dive into open source projects

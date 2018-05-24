@@ -1,0 +1,12 @@
+Q. What happens when you initialize a repository? Why do you need to do it?
+
+We initialize a repository with git init  command. When you initialize a git it doesnt create any commits for you. For further details on the status of the repository we can use the command git status- which shows how many commits are there in your repository and if not it shows initial commit blank or says no commits.
+
+Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is a sort of intermediate area between the working directory ahd the git repository. Git allows you to add files to the staging area first and then if you rae okay then you can commit them. Else you can always go back with the command {git reset filename}.
+You can add files to the staging area by the command git add filename with one file at a time. You can check the status of git repository using the command git status.
+
+value-- Makes us decide how many commits to make depending on the number of logical changes with preferrably one logical change per commit. And also if a mistake is committed then go back to correct state with git reset. So the repository is unscathed of these changes.
+
+ 

@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+To make changes as such to create and edit plaintext files directly on GitHub website whenever on another system (or)
+enable other persons to contribute to a project by pushing changes to GitHub.

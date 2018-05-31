@@ -9,4 +9,23 @@ You can add files to the staging area by the command git add filename with one f
 
 value-- Makes us decide how many commits to make depending on the number of logical changes with preferrably one logical change per commit. And also if a mistake is committed then go back to correct state with git reset. So the repository is unscathed of these changes.
 
- 
+Q. How can you use the staging area to make sure you have one commit per logical change?
+
+We can here use the git diff command without any arguments to see the diffences in the files of working directory and the staging area. Similarly after placing the files in the staging area by git add command we may take a break and forget what changes we made so we can see the difference between the staging area and the most recent commit in the repository by the command git diff --staged and then if some file is present we can commit by the command git commit. So from this we can also selectively add files from the working directory to the staging area which makes up one single logical change and then commit it easily. If we want to revert back any changes in either the working directory or the staging area we can use the command git reset --hard.Should be careful while using it. Other helpful commands are git log, git status. Study about git checkout master (which runs the correct commit for me since I had not fixed the detachedHEAD problem). Can check https://git-scm.com/book/en/v2/Git-Internals-Git-Objects for more insights. 
+
+Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+We can introduce branches and have differentiating changes in those for the whole software and test them diffrently on how they behave and when we want we can always merge them. Again if we make any bad changes in the branch we can always switch to another branch. Thus history remains organized too. Again commit becomes easy because it will commit only the branch that is checked out currently and all te others are left as they are. Important commands to use- git branch (without any arguments) shows the current branches and the default one too. git branch branchname creates a new branch with that name. We can use git checkout branchname to checkout any other branch depending on which branch we want the changes to commit to. git add to add the changed file and then git commit.
+
+Q. How do the diagrams help you visualize the branch structure?
+
+Well it shows the rechability of various branches and the commits that are created at each branch. In commands we can use the git checkout and git branch commands to checkout a branch/commit and create new branches respectively.
+
+Q. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The changes from both branches are merged together and we also need to consider the original file to get what are the actual changes committed in the final file. In the diagram that we use to represent the whole structure is--  we get to know the parents of each commit/branch and also understand the theory of merging and the results can also be incurred diagrammatically.
+
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros-- No need to check so many lines of code manually and merge easily. I f any conflicts arise git helps in marking the conflicts with different signs like >>>>>> or |||||||| or ====== to make us know which part of code we need to look into to resolve the conflicts. Time saving. 
+Cons-- If there are conflicts i.e the git is unable to merge by resolving some changes made by multiple entities in the same function, or between different functions etc. which need to be resolved manually and cant be done automatically by git. Well it can done by git automatically but with the help of machine learning where in it is needed to be trained on multiple sets to know what conflit has arisen and solution for each type of conflict.

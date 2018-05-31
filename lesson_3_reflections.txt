@@ -3,3 +3,9 @@ local?
 
 To make changes as such to create and edit plaintext files directly on GitHub website whenever on another system (or)
 enable other persons to contribute to a project by pushing changes to GitHub.
+
+Q. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your 
+remote repository?
+
+While doing changes we will have first hand experience or knowledge of whatever changes are done by us or others and we can modify 
+further with appropriate knowledge. +

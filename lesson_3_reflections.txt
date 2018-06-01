@@ -9,3 +9,12 @@ remote repository?
 
 While doing changes we will have first hand experience or knowledge of whatever changes are done by us or others and we can modify 
 further with appropriate knowledge. +
+
+Q. Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Fork-- allows you to make a copy of somebody else's repository dierctly on GitHub's server without pulling down the code to your 
+local machine first. You can fork an existing repository and have it appear under your own with a single click.
+Clone-- allows to download someone else's repository directly into your local machine or download/pull the changes from your own repository
+(if or not it is forked from other repository) onto the local machine and Git will also create the required remote(origin) on your machine for you. 
+Branch-- It is another version of the latest commit of the master introduced basically to make new changes and test before applying
+the actual file. Help keep a project organized. 
